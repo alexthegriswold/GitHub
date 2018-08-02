@@ -18,4 +18,20 @@ Once installed, open your project directory in terminal and execute
 carthage update --platform iOS
 ```
 
+To view your github's repositories, you'll need to generate a [personal access token](https://github.com/settings/tokens).
+
+Inside AppDelegate.swift, the apollo client is declared. You'll want to replace my key with yours.  
+
+```
+let apollo: ApolloClient = {
+    let configuration = URLSessionConfiguration.default
+    // Add additional headers as needed
+    configuration.httpAdditionalHeaders = ["Authorization": "Bearer ADD YOUR KEY HERE"]
+    
+    let url = URL(string: "https://api.github.com/graphql")!
+    
+    return ApolloClient(networkTransport: HTTPNetworkTransport(url: url, configuration: configuration))
+}()
+```
+
 From there, you'll be good to go!
