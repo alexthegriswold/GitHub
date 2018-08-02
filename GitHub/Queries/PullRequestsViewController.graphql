@@ -1,0 +1,26 @@
+query GetPullRequests($repositoryName: String!) {
+    viewer {
+        repository(name: $repositoryName) {
+            pullRequests(first: 25) {
+                edges {
+                    node {
+                        title
+                        number
+                        closed
+                        createdAt
+                        author {
+                            login
+                        }
+
+                    }
+                    cursor
+                    }
+                    pageInfo {
+                        endCursor
+                        hasNextPage
+                    }
+                }
+            }
+        }
+}
+

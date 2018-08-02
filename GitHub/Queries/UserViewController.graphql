@@ -1,0 +1,41 @@
+query GetRepositoriesAfter($repositoryID: String!) {
+    viewer {
+        repositories(first: 10, after: $repositoryID) {
+            edges {
+                node {
+                    id
+                    name
+                primaryLanguage {
+                    name
+                }
+            }
+            cursor
+            }
+            pageInfo {
+                endCursor
+                hasNextPage
+            }
+        }
+    }
+}
+
+query GetFirstRepositories {
+    viewer {
+        repositories(first: 10) {
+            edges {
+                node {
+                    id
+                    name
+                primaryLanguage {
+                    name
+                }
+            }
+            cursor
+            }
+            pageInfo {
+                endCursor
+                hasNextPage
+            }
+        }
+    }
+}

@@ -7,6 +7,17 @@
 //
 
 import UIKit
+import Apollo
+
+let apollo: ApolloClient = {
+    let configuration = URLSessionConfiguration.default
+    // Add additional headers as needed
+    configuration.httpAdditionalHeaders = ["Authorization": "Bearer 6f02bfb9099144ffed8c5fbabeaf3369a5592d74"]
+    
+    let url = URL(string: "https://api.github.com/graphql")!
+    
+    return ApolloClient(networkTransport: HTTPNetworkTransport(url: url, configuration: configuration))
+}()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UINavigationController(rootViewController: UserViewController(collectionViewLayout: UICollectionViewFlowLayout()))
+        window?.makeKeyAndVisible()
         return true
     }
 

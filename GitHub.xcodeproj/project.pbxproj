@@ -8,19 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		505F308621135665000B61FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F308521135665000B61FE /* AppDelegate.swift */; };
-		505F308821135665000B61FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F308721135665000B61FE /* ViewController.swift */; };
+		505F308821135665000B61FE /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F308721135665000B61FE /* UserViewController.swift */; };
 		505F308B21135665000B61FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F308921135665000B61FE /* Main.storyboard */; };
 		505F308D21135665000B61FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F308C21135665000B61FE /* Assets.xcassets */; };
 		505F309021135665000B61FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F308E21135665000B61FE /* LaunchScreen.storyboard */; };
 		505F30992113580E000B61FE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505F30982113580E000B61FE /* RealmSwift.framework */; };
 		505F309B21135812000B61FE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505F309A21135812000B61FE /* Realm.framework */; };
 		505F309E21135CFC000B61FE /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505F309D21135CFC000B61FE /* Apollo.framework */; };
+		505F30A721135F1A000B61FE /* UserViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 505F30A421135F14000B61FE /* UserViewController.graphql */; };
+		505F30A821135F1A000B61FE /* PullRequestViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 505F30A521135F17000B61FE /* PullRequestViewController.graphql */; };
+		505F30A921135F1A000B61FE /* PullRequestsViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 505F30A621135F1A000B61FE /* PullRequestsViewController.graphql */; };
+		505F30AC21136985000B61FE /* ColorPickerForLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30AB21136985000B61FE /* ColorPickerForLanguage.swift */; };
+		505F30AE21136A14000B61FE /* UserViewController+GraphQLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30AD21136A14000B61FE /* UserViewController+GraphQLClient.swift */; };
+		505F30B021136A38000B61FE /* PullRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30AF21136A38000B61FE /* PullRequestView.swift */; };
+		505F30B221136A5B000B61FE /* RepositoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30B121136A5B000B61FE /* RepositoryViewCell.swift */; };
+		505F30B421136A6C000B61FE /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30B321136A6C000B61FE /* HeaderViewCell.swift */; };
+		505F30B621136A87000B61FE /* PullRequestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30B521136A87000B61FE /* PullRequestViewCell.swift */; };
+		505F30B821136AAD000B61FE /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30B721136AAD000B61FE /* RepositoryViewController.swift */; };
+		505F30BA21136AC6000B61FE /* PullRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30B921136AC5000B61FE /* PullRequestViewController.swift */; };
+		505F30BC21136AE0000B61FE /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30BB21136AE0000B61FE /* Repository.swift */; };
+		505F30BE21136AFF000B61FE /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30BD21136AFF000B61FE /* PullRequest.swift */; };
+		505F30C021136B1B000B61FE /* RealmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30BF21136B1B000B61FE /* RealmRepository.swift */; };
+		505F30C221136B2F000B61FE /* RealmPullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30C121136B2F000B61FE /* RealmPullRequest.swift */; };
+		505F30C421136B4B000B61FE /* LastDownloadedRepositoryID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30C321136B4B000B61FE /* LastDownloadedRepositoryID.swift */; };
+		505F30C621136B65000B61FE /* LastDownloadedPullReuqestID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30C521136B65000B61FE /* LastDownloadedPullReuqestID.swift */; };
+		505F30C821136B9F000B61FE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30C721136B9F000B61FE /* API.swift */; };
+		505F30D121136D79000B61FE /* LoadingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30D021136D79000B61FE /* LoadingViewCell.swift */; };
+		505F30D3211373BD000B61FE /* RepositoryViewController+GraphQLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30D2211373BD000B61FE /* RepositoryViewController+GraphQLClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		505F308221135665000B61FE /* GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F308521135665000B61FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		505F308721135665000B61FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		505F308721135665000B61FE /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		505F308A21135665000B61FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		505F308C21135665000B61FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		505F308F21135665000B61FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +48,26 @@
 		505F30982113580E000B61FE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		505F309A21135812000B61FE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		505F309D21135CFC000B61FE /* Apollo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Apollo.framework; path = Carthage/Build/iOS/Apollo.framework; sourceTree = "<group>"; };
+		505F30A421135F14000B61FE /* UserViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserViewController.graphql; sourceTree = "<group>"; };
+		505F30A521135F17000B61FE /* PullRequestViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PullRequestViewController.graphql; sourceTree = "<group>"; };
+		505F30A621135F1A000B61FE /* PullRequestsViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PullRequestsViewController.graphql; sourceTree = "<group>"; };
+		505F30AB21136985000B61FE /* ColorPickerForLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorPickerForLanguage.swift; path = "../New Group/ColorPickerForLanguage.swift"; sourceTree = "<group>"; };
+		505F30AD21136A14000B61FE /* UserViewController+GraphQLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserViewController+GraphQLClient.swift"; sourceTree = "<group>"; };
+		505F30AF21136A38000B61FE /* PullRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PullRequestView.swift; path = "../New Group1/PullRequestView.swift"; sourceTree = "<group>"; };
+		505F30B121136A5B000B61FE /* RepositoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewCell.swift; sourceTree = "<group>"; };
+		505F30B321136A6C000B61FE /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
+		505F30B521136A87000B61FE /* PullRequestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestViewCell.swift; sourceTree = "<group>"; };
+		505F30B721136AAD000B61FE /* RepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewController.swift; sourceTree = "<group>"; };
+		505F30B921136AC5000B61FE /* PullRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestViewController.swift; sourceTree = "<group>"; };
+		505F30BB21136AE0000B61FE /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		505F30BD21136AFF000B61FE /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		505F30BF21136B1B000B61FE /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
+		505F30C121136B2F000B61FE /* RealmPullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPullRequest.swift; sourceTree = "<group>"; };
+		505F30C321136B4B000B61FE /* LastDownloadedRepositoryID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastDownloadedRepositoryID.swift; sourceTree = "<group>"; };
+		505F30C521136B65000B61FE /* LastDownloadedPullReuqestID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastDownloadedPullReuqestID.swift; sourceTree = "<group>"; };
+		505F30C721136B9F000B61FE /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		505F30D021136D79000B61FE /* LoadingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewCell.swift; sourceTree = "<group>"; };
+		505F30D2211373BD000B61FE /* RepositoryViewController+GraphQLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoryViewController+GraphQLClient.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +104,16 @@
 		505F308421135665000B61FE /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
+				505F30C721136B9F000B61FE /* API.swift */,
 				505F308521135665000B61FE /* AppDelegate.swift */,
-				505F308721135665000B61FE /* ViewController.swift */,
-				505F308921135665000B61FE /* Main.storyboard */,
+				505F30CE21136D08000B61FE /* Views */,
+				505F30CD21136CF4000B61FE /* View Cells */,
+				505F30CC21136CCE000B61FE /* View Controllers */,
+				505F30AA21136938000B61FE /* Queries */,
+				505F30CB21136CB0000B61FE /* Models */,
+				505F30C921136C83000B61FE /* Helper Files */,
+				505F30CF21136D4B000B61FE /* Storyboards */,
 				505F308C21135665000B61FE /* Assets.xcassets */,
-				505F308E21135665000B61FE /* LaunchScreen.storyboard */,
 				505F309121135665000B61FE /* Info.plist */,
 			);
 			path = GitHub;
@@ -82,6 +127,77 @@
 				505F30982113580E000B61FE /* RealmSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		505F30AA21136938000B61FE /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				505F30A521135F17000B61FE /* PullRequestViewController.graphql */,
+				505F30A421135F14000B61FE /* UserViewController.graphql */,
+				505F30A621135F1A000B61FE /* PullRequestsViewController.graphql */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		505F30C921136C83000B61FE /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				505F30AB21136985000B61FE /* ColorPickerForLanguage.swift */,
+				505F30AD21136A14000B61FE /* UserViewController+GraphQLClient.swift */,
+				505F30D2211373BD000B61FE /* RepositoryViewController+GraphQLClient.swift */,
+			);
+			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		505F30CB21136CB0000B61FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				505F30BB21136AE0000B61FE /* Repository.swift */,
+				505F30BD21136AFF000B61FE /* PullRequest.swift */,
+				505F30BF21136B1B000B61FE /* RealmRepository.swift */,
+				505F30C121136B2F000B61FE /* RealmPullRequest.swift */,
+				505F30C321136B4B000B61FE /* LastDownloadedRepositoryID.swift */,
+				505F30C521136B65000B61FE /* LastDownloadedPullReuqestID.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		505F30CC21136CCE000B61FE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				505F308721135665000B61FE /* UserViewController.swift */,
+				505F30B721136AAD000B61FE /* RepositoryViewController.swift */,
+				505F30B921136AC5000B61FE /* PullRequestViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		505F30CD21136CF4000B61FE /* View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				505F30B121136A5B000B61FE /* RepositoryViewCell.swift */,
+				505F30B321136A6C000B61FE /* HeaderViewCell.swift */,
+				505F30B521136A87000B61FE /* PullRequestViewCell.swift */,
+				505F30D021136D79000B61FE /* LoadingViewCell.swift */,
+			);
+			path = "View Cells";
+			sourceTree = "<group>";
+		};
+		505F30CE21136D08000B61FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				505F30AF21136A38000B61FE /* PullRequestView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		505F30CF21136D4B000B61FE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				505F308921135665000B61FE /* Main.storyboard */,
+				505F308E21135665000B61FE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				505F309021135665000B61FE /* LaunchScreen.storyboard in Resources */,
+				505F30A921135F1A000B61FE /* PullRequestsViewController.graphql in Resources */,
+				505F30A721135F1A000B61FE /* UserViewController.graphql in Resources */,
 				505F308D21135665000B61FE /* Assets.xcassets in Resources */,
+				505F30A821135F1A000B61FE /* PullRequestViewController.graphql in Resources */,
 				505F308B21135665000B61FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,8 +310,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505F308821135665000B61FE /* ViewController.swift in Sources */,
+				505F30B221136A5B000B61FE /* RepositoryViewCell.swift in Sources */,
+				505F30B421136A6C000B61FE /* HeaderViewCell.swift in Sources */,
+				505F30AE21136A14000B61FE /* UserViewController+GraphQLClient.swift in Sources */,
+				505F30AC21136985000B61FE /* ColorPickerForLanguage.swift in Sources */,
+				505F30B821136AAD000B61FE /* RepositoryViewController.swift in Sources */,
+				505F30BC21136AE0000B61FE /* Repository.swift in Sources */,
+				505F30D121136D79000B61FE /* LoadingViewCell.swift in Sources */,
+				505F30D3211373BD000B61FE /* RepositoryViewController+GraphQLClient.swift in Sources */,
+				505F30BE21136AFF000B61FE /* PullRequest.swift in Sources */,
+				505F30B021136A38000B61FE /* PullRequestView.swift in Sources */,
+				505F30C021136B1B000B61FE /* RealmRepository.swift in Sources */,
+				505F30B621136A87000B61FE /* PullRequestViewCell.swift in Sources */,
+				505F308821135665000B61FE /* UserViewController.swift in Sources */,
 				505F308621135665000B61FE /* AppDelegate.swift in Sources */,
+				505F30C621136B65000B61FE /* LastDownloadedPullReuqestID.swift in Sources */,
+				505F30C221136B2F000B61FE /* RealmPullRequest.swift in Sources */,
+				505F30C421136B4B000B61FE /* LastDownloadedRepositoryID.swift in Sources */,
+				505F30C821136B9F000B61FE /* API.swift in Sources */,
+				505F30BA21136AC6000B61FE /* PullRequestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +479,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = GitHub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MobilePic.GitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -365,6 +502,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = GitHub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +510,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MobilePic.GitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,14 @@
+query GetPullRequest($repositoryName: String!, $pullRequestNumber: Int!) {
+    viewer {
+        repository(name: $repositoryName) {
+            pullRequest(number: $pullRequestNumber) {
+                title
+                author {
+                    login
+                }
+                createdAt
+                }
+
+            }
+        }
+}
