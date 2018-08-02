@@ -3,7 +3,7 @@
 ### Dependencies: 
 - Realm 
 - RealmSwift
-- Appolo 
+- Apollo 
 
 ### Installation Instructions
 First download this repositories zip file. 
