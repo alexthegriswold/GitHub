@@ -6,11 +6,11 @@
 - Apollo 
 
 ### Installation Instructions
-First download this repositories zip file. 
+First download this repositorie's zip file. 
 
 To run the project, you'll need to install a few dependencies with Carthage. 
 
-If you don't have Carthage you can download the carthage pkg file at [Carthage Releases](https://github.com/Carthage/Carthage/releases).
+If you don't have Carthage you can download the pkg file at [Carthage Releases](https://github.com/Carthage/Carthage/releases).
 
 Once installed, open your project directory in terminal and execute 
 
