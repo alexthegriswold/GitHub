@@ -18,9 +18,7 @@
 		505F30A721135F1A000B61FE /* UserViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 505F30A421135F14000B61FE /* UserViewController.graphql */; };
 		505F30A821135F1A000B61FE /* PullRequestViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 505F30A521135F17000B61FE /* PullRequestViewController.graphql */; };
 		505F30A921135F1A000B61FE /* PullRequestsViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 505F30A621135F1A000B61FE /* PullRequestsViewController.graphql */; };
-		505F30AC21136985000B61FE /* ColorPickerForLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30AB21136985000B61FE /* ColorPickerForLanguage.swift */; };
 		505F30AE21136A14000B61FE /* UserViewController+GraphQLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30AD21136A14000B61FE /* UserViewController+GraphQLClient.swift */; };
-		505F30B021136A38000B61FE /* PullRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30AF21136A38000B61FE /* PullRequestView.swift */; };
 		505F30B221136A5B000B61FE /* RepositoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30B121136A5B000B61FE /* RepositoryViewCell.swift */; };
 		505F30B421136A6C000B61FE /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30B321136A6C000B61FE /* HeaderViewCell.swift */; };
 		505F30B621136A87000B61FE /* PullRequestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30B521136A87000B61FE /* PullRequestViewCell.swift */; };
@@ -35,6 +33,8 @@
 		505F30C821136B9F000B61FE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30C721136B9F000B61FE /* API.swift */; };
 		505F30D121136D79000B61FE /* LoadingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30D021136D79000B61FE /* LoadingViewCell.swift */; };
 		505F30D3211373BD000B61FE /* RepositoryViewController+GraphQLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30D2211373BD000B61FE /* RepositoryViewController+GraphQLClient.swift */; };
+		505F30D521138218000B61FE /* PullRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30D421138218000B61FE /* PullRequestView.swift */; };
+		505F30D721138236000B61FE /* ColorPickerForLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F30D621138236000B61FE /* ColorPickerForLanguage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,9 +51,7 @@
 		505F30A421135F14000B61FE /* UserViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserViewController.graphql; sourceTree = "<group>"; };
 		505F30A521135F17000B61FE /* PullRequestViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PullRequestViewController.graphql; sourceTree = "<group>"; };
 		505F30A621135F1A000B61FE /* PullRequestsViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PullRequestsViewController.graphql; sourceTree = "<group>"; };
-		505F30AB21136985000B61FE /* ColorPickerForLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorPickerForLanguage.swift; path = "../New Group/ColorPickerForLanguage.swift"; sourceTree = "<group>"; };
 		505F30AD21136A14000B61FE /* UserViewController+GraphQLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserViewController+GraphQLClient.swift"; sourceTree = "<group>"; };
-		505F30AF21136A38000B61FE /* PullRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PullRequestView.swift; path = "../New Group1/PullRequestView.swift"; sourceTree = "<group>"; };
 		505F30B121136A5B000B61FE /* RepositoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewCell.swift; sourceTree = "<group>"; };
 		505F30B321136A6C000B61FE /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
 		505F30B521136A87000B61FE /* PullRequestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestViewCell.swift; sourceTree = "<group>"; };
@@ -68,6 +66,8 @@
 		505F30C721136B9F000B61FE /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		505F30D021136D79000B61FE /* LoadingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewCell.swift; sourceTree = "<group>"; };
 		505F30D2211373BD000B61FE /* RepositoryViewController+GraphQLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoryViewController+GraphQLClient.swift"; sourceTree = "<group>"; };
+		505F30D421138218000B61FE /* PullRequestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestView.swift; sourceTree = "<group>"; };
+		505F30D621138236000B61FE /* ColorPickerForLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerForLanguage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +142,7 @@
 		505F30C921136C83000B61FE /* Helper Files */ = {
 			isa = PBXGroup;
 			children = (
-				505F30AB21136985000B61FE /* ColorPickerForLanguage.swift */,
+				505F30D621138236000B61FE /* ColorPickerForLanguage.swift */,
 				505F30AD21136A14000B61FE /* UserViewController+GraphQLClient.swift */,
 				505F30D2211373BD000B61FE /* RepositoryViewController+GraphQLClient.swift */,
 			);
@@ -186,7 +186,7 @@
 		505F30CE21136D08000B61FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				505F30AF21136A38000B61FE /* PullRequestView.swift */,
+				505F30D421138218000B61FE /* PullRequestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,20 +313,20 @@
 				505F30B221136A5B000B61FE /* RepositoryViewCell.swift in Sources */,
 				505F30B421136A6C000B61FE /* HeaderViewCell.swift in Sources */,
 				505F30AE21136A14000B61FE /* UserViewController+GraphQLClient.swift in Sources */,
-				505F30AC21136985000B61FE /* ColorPickerForLanguage.swift in Sources */,
 				505F30B821136AAD000B61FE /* RepositoryViewController.swift in Sources */,
 				505F30BC21136AE0000B61FE /* Repository.swift in Sources */,
 				505F30D121136D79000B61FE /* LoadingViewCell.swift in Sources */,
 				505F30D3211373BD000B61FE /* RepositoryViewController+GraphQLClient.swift in Sources */,
 				505F30BE21136AFF000B61FE /* PullRequest.swift in Sources */,
-				505F30B021136A38000B61FE /* PullRequestView.swift in Sources */,
 				505F30C021136B1B000B61FE /* RealmRepository.swift in Sources */,
 				505F30B621136A87000B61FE /* PullRequestViewCell.swift in Sources */,
+				505F30D721138236000B61FE /* ColorPickerForLanguage.swift in Sources */,
 				505F308821135665000B61FE /* UserViewController.swift in Sources */,
 				505F308621135665000B61FE /* AppDelegate.swift in Sources */,
 				505F30C621136B65000B61FE /* LastDownloadedPullReuqestID.swift in Sources */,
 				505F30C221136B2F000B61FE /* RealmPullRequest.swift in Sources */,
 				505F30C421136B4B000B61FE /* LastDownloadedRepositoryID.swift in Sources */,
+				505F30D521138218000B61FE /* PullRequestView.swift in Sources */,
 				505F30C821136B9F000B61FE /* API.swift in Sources */,
 				505F30BA21136AC6000B61FE /* PullRequestViewController.swift in Sources */,
 			);
