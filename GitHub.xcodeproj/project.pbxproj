@@ -14,6 +14,7 @@
 		505F309021135665000B61FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F308E21135665000B61FE /* LaunchScreen.storyboard */; };
 		505F30992113580E000B61FE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505F30982113580E000B61FE /* RealmSwift.framework */; };
 		505F309B21135812000B61FE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505F309A21135812000B61FE /* Realm.framework */; };
+		505F309E21135CFC000B61FE /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505F309D21135CFC000B61FE /* Apollo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		505F309121135665000B61FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505F30982113580E000B61FE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		505F309A21135812000B61FE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		505F309D21135CFC000B61FE /* Apollo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Apollo.framework; path = Carthage/Build/iOS/Apollo.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			files = (
 				505F30992113580E000B61FE /* RealmSwift.framework in Frameworks */,
 				505F309B21135812000B61FE /* Realm.framework in Frameworks */,
+				505F309E21135CFC000B61FE /* Apollo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,7 @@
 		505F30972113580E000B61FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				505F309D21135CFC000B61FE /* Apollo.framework */,
 				505F309A21135812000B61FE /* Realm.framework */,
 				505F30982113580E000B61FE /* RealmSwift.framework */,
 			);
@@ -87,6 +91,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 505F309421135665000B61FE /* Build configuration list for PBXNativeTarget "GitHub" */;
 			buildPhases = (
+				505F309F21135D09000B61FE /* Generate Apollo GraphQL API */,
 				505F307E21135665000B61FE /* Sources */,
 				505F307F21135665000B61FE /* Frameworks */,
 				505F308021135665000B61FE /* Resources */,
@@ -156,6 +161,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Apollo.framework",
 			);
 			name = "Copy Frameworks";
 			outputPaths = (
@@ -163,6 +169,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		505F309F21135D09000B61FE /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift";
 		};
 /* End PBXShellScriptBuildPhase section */
 
