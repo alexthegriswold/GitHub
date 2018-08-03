@@ -43,7 +43,7 @@ class RepositoryViewController: UICollectionViewController, UICollectionViewDele
         let realmPullRequests = realm.objects(RealmPullRequest.self).filter("repositoryName = %@", repository.name)
         if realmPullRequests.count > 0 {
             for pullRequest in realmPullRequests {
-                pullRequests.append(PullRequest(repositoryName: pullRequest.repositoryName, title: pullRequest.title, number: pullRequest.number, author: pullRequest.author, date: pullRequest.author))
+                pullRequests.append(PullRequest(repositoryName: pullRequest.repositoryName, title: pullRequest.title, number: pullRequest.number, author: pullRequest.author, date: pullRequest.date))
             }
             
             DispatchQueue.main.async {
